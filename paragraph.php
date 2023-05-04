@@ -37,20 +37,26 @@ else {
     <main class="container">
         <?php if (!empty(trim($_POST["censor"])) && !empty($_POST["paragraph"])):?>
         <!-- Censored -->
-        <h2 class="mb-3">Censurato</h2>
-        <div class="row  mb-5">
-            <div class="col bg-success py-4 px-3 rounded-4">
+
+        <div class="row mb-5">
+            <h2 class="mb-3 col-12">Censurato</h2>
+            <div class="col-12 bg-success py-4 px-3 rounded-4">
                 <?php echo $paragCensored?>
             </div>
         </div>
         <!-- Not Censored -->
-        <h2 class="mb-3">Non censurato</h2>
+
         <div class="row">
-            <div class="col bg-success py-4 px-3 rounded-4">
+            <h2 class="mb-3 col-12">Non censurato</h2>
+            <div class="col-12 bg-success py-4 px-3 rounded-4">
                 <?php echo $parag?>
             </div>
         </div>
         <?php endif?>
+        <div class="row">
+            <a href="index.php" class="col-12 btn btn-warning w-100 fw-bold mt-3"><i class="fa-solid fa-left-long fs-3"></i></a>
+        </div>
+
     </main>
 </body>
 </html>
