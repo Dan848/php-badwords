@@ -15,7 +15,7 @@
     </header>
     <main class="container">
         <div class="row">
-            <form action="paragraph" method="POST" class="col py-4 px-3 bg-success rounded-4">
+            <form action="paragraph.php" method="POST" class="col py-4 px-3 bg-success rounded-4">
                 <div class="mb-3">
                     <div class="h6">Inserisci la parola che vuoi censurare</div>
                     <input class="form-control" name='censor' />
